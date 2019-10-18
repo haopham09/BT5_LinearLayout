@@ -1,18 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EE8E87"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="4"
     tools:context=".MainActivity">
 
-    <TextView
+
+    <Button
+
+        android:id="@+id/btn_01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_margin="5sp"
+        android:background="#0083E2"
+        android:text="Linearlayout 01"
+        android:textColor="#fff" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/btn_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_01"
+        android:layout_margin="5sp"
+        android:background="#E6CC00"
+        android:text="Linearlayout 02"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/btn_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_02"
+        android:layout_margin="5sp"
+        android:background="#00C908"
+        android:text="Linearlayout 03"
+        android:textColor="#fff" />
+</RelativeLayout>
